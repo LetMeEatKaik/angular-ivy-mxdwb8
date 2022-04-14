@@ -1,0 +1,28 @@
+<!-- <div style="text-align:center">
+    <h1 class="font-medium leading-tight text-5xl mt-0 mb-2 text-blue-600">PDF Library aka {{title}}</h1>
+   </div>
+   <div class="gallery" *ngFor="let d of pdfList">
+    <a target="_blank" [href]="d.href">
+      <img src = "https://upload.wikimedia.org/wikipedia/commons/8/87/PDF_file_icon.svg"
+      alt = "PDF library" height = "100" width = "80" />
+    </a>
+    <div class="desc">{{d.title}}</div>
+    <div >{{d.description}}</div>
+   </div> -->
+
+   <div class="container mx-auto px-4" >
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+    <div class="rounded-lg shadow-lg bg-white" *ngFor="let d of pdfList">
+<div class="">
+<a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
+<img class="rounded-t-sm mx-auto" src="https://upload.wikimedia.org/wikipedia/commons/8/87/PDF_file_icon.svg" alt="pdf file" width="70" height="100"/>
+</a>
+</div>
+<div class="p-6">
+<h5 class="text-gray-900 text-xl font-medium mb-2">{{d.title}}</h5>
+<p class="text-gray-700 text-base mb-4">
+ {{d.description}}
+</p>
+<!-- <button type="button" class=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Button</button> -->
+</div>
+</div> 

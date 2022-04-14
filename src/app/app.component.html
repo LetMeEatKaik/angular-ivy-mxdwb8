@@ -1,4 +1,72 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+
+<header class="border-b md:flex md:items-center md:justify-between p-4 pb-0 shadow-lg md:pb-4">
+  
+  <!-- Logo text or image -->
+  <div class="flex items-center justify-between mb-4 md:mb-0">
+    <h1 class="leading-none text-2xl text-blue-600">
+      <a class="no-underline text-grey-darkest hover:text-black" href="#">
+        PDF Library
+      </a>
+    </h1>
+
+    <a class="text-black hover:text-orange md:hidden" href="#">
+      <i class="fa fa-2x fa-bars"></i>
+    </a>
+  </div>
+  <!-- END Logo text or image -->
+  
+  
+  <!-- Global navigation -->
+  <nav>
+    <ul class="list-reset md:flex md:items-center">
+      <li class="md:ml-4">
+        <a class="nav-item nav-link" routerLink="/">Home</a>
+      </li>
+      <li class="md:ml-4">
+        <a class="nav-item nav-link" routerLink="/register">About</a>
+      </li>
+
+    </ul>
+  </nav>
+  <!-- END Global navigation -->
+
+</header>
+
+<!-- 
+<nav class="navbar navbar-expand navbar-dark bg-dark">
+  <div class="navbar-nav">
+      <a class="nav-item nav-link" routerLink="/">Home</a>
+      <a class="nav-item nav-link" routerLink="/register">Register</a>
+  </div>
+</nav> -->
+
+<!-- main content container -->
+<div class="jumbotron">
+  <div class="container">
+      <div class="row">
+          <div class="col-sm-8 offset-sm-2">
+              <router-outlet></router-outlet>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- 
+
+<div style="text-align:center">
+  <h1>
+    PDF Library
+  </h1>
+ </div>
+ <div class="gallery" *ngFor="let image of data">
+  <a target="_blank" [href]="image.href">
+    <img src = "https://upload.wikimedia.org/wikipedia/commons/8/87/PDF_file_icon.svg"
+    alt = "Learn HTML5" height = "300" width = "200" />
+  </a>
+  <div class="desc">{{image.title}}</div>
+  <div >{{image.description}}</div>
+ </div> -->

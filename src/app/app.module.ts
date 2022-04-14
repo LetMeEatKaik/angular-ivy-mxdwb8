@@ -1,13 +1,32 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from "@angular/common/http";
 
+
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HelloComponent } from './hello.component';
+import { HomeComponent } from './home';
+// import { LoginComponent } from './login';
+import { RegisterComponent } from './register';
+import { ScholarAPIComponent } from './scholar-api/scholar-api.component';
+import { PdfServiceService } from './pdf-service.service';
+import { PdfServicePracticeComponent } from './pdf-service-practice/pdf-service-practice.component';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent ],
-  bootstrap:    [ AppComponent ]
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    // LoginComponent,
+    RegisterComponent,
+    ScholarAPIComponent,
+    PdfServicePracticeComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule
+  ],
+  providers: [ PdfServiceService],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
