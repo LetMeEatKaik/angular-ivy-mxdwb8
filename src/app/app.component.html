@@ -1,7 +1,14 @@
-
-<header class="border-b md:flex md:items-center md:justify-between p-4 pb-0 shadow-lg md:pb-4">
-  
-  <!-- Logo text or image -->
+<header
+  class="
+    border-b
+    md:flex md:items-center md:justify-between
+    p-4
+    pb-0
+    shadow-lg
+    md:pb-4
+  "
+>
+  <!-- Logo text or image: USED SOURCE: https://tailwindui.com/components/application-ui/navigation/navbars -->
   <div class="flex items-center justify-between mb-4 md:mb-0">
     <h1 class="leading-none text-2xl text-blue-600">
       <a class="no-underline text-grey-darkest hover:text-black" href="#">
@@ -14,8 +21,7 @@
     </a>
   </div>
   <!-- END Logo text or image -->
-  
-  
+
   <!-- Global navigation -->
   <nav>
     <ul class="list-reset md:flex md:items-center">
@@ -25,11 +31,9 @@
       <li class="md:ml-4">
         <a class="nav-item nav-link" routerLink="/register">About</a>
       </li>
-
     </ul>
   </nav>
   <!-- END Global navigation -->
-
 </header>
 
 <!-- 
@@ -43,17 +47,13 @@
 <!-- main content container -->
 <div class="jumbotron">
   <div class="container">
-      <div class="row">
-          <div class="col-sm-8 offset-sm-2">
-              <router-outlet></router-outlet>
-          </div>
+    <div class="row">
+      <div class="col-sm-8 offset-sm-2">
+        <router-outlet></router-outlet>
       </div>
+    </div>
   </div>
 </div>
-
-
-
-
 
 <!-- 
 

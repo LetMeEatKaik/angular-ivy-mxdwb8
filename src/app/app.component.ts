@@ -27,19 +27,21 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 
+// describe the component
 @Component({
  selector: 'app-root',
  templateUrl: './app.component.html',
  styleUrls: ['./app.component.scss']
 })
 
+// export correct compoenent
 export class AppComponent implements OnInit {
  title = 'image-gallery';
  public data: any = []
  constructor(private http: HttpClient) {
   
  }
-
+// get the data from API
  getData(){
   //  const url ='https://jsonplaceholder.typicode.com/photos?albumId=1'
   const url ='http://198.211.102.195:8085/api/texts'

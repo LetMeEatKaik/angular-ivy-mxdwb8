@@ -4,6 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 
+// export json data
 export class PdfServiceService {
   a = [
     {
@@ -36,18 +37,19 @@ export class PdfServiceService {
   ];
 
   // dif from video!
-  getNumberOfPDFS(): number{
+  getNumberOfPDFS(): number {
     return this.a.length;
   }
 
-  listPDFS(){
+  listPDFS() {
     return this.a;
   }
 
-  getPDF(id: any){
-    return this.a.find((el) => {return el._id == id});
+  getPDF(id: any) {
+    return this.a.find((el) => {
+      return el._id == id;
+    });
   }
 
-  constructor() {
-  }
+  constructor() {}
 }

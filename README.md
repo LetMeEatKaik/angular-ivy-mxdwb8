@@ -35,3 +35,6 @@ How to create pages and routes
 https://jasonwatmore.com/post/2019/04/29/angular-7-tutorial-part-3-add-routing-multiple-pages
 
 Additional resources for navbar: https://codepen.io/codetimeio/pen/RYMqvL?editors=1000/?theme-id=0&default-tab=html,result&embed-version=2
+
+## NOTE:
+this is not the git project that I'm using for the actual assignment. It's a clone of it (I was having difficulty hooking the stackblitz to the class git)
